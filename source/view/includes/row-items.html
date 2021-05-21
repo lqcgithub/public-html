@@ -1,0 +1,15 @@
+<div class="row items">
+    {% for app in apps %}
+    <div class="card col-2 mt-3">
+        <div class="card-body">
+            <a href="app?id={{ app['id'] }}">
+                <img class="card-img-top" src={{ app.icon }} alt="Card image cap">
+                <h5 class="card-title text-truncate">{{ app.title }}</h5>
+            </a>
+            <h6 class="card-subtitle mb-2 text-muted text-truncate">{{ app.dev }}</h6>
+            <p class="card-text text-truncate">{{ app.rating }}
+            </p>
+        </div>
+    </div>
+    {% endfor %}
+</div>

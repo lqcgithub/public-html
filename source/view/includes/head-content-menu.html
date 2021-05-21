@@ -1,0 +1,50 @@
+<div class="container menu d-flex">
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle mt-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Danh sách
+        </button>
+        <ul class="dropdown-menu border-dark" aria-labelledby="dropdownMenuButton1">
+            <!-- <li><a class="dropdown-item" href="#">Action</a></li> -->
+            {% if controller == 'home' %} {% set href = "app?genre=" %} {% else %} {% set href = "?genre=" %} {% endif %}
+            <li class="row" style="width: 400px;">
+                <ul class="col-6 list-unstyled">
+                    {% for genre in genres|slice(0, 4) %}
+                    <li class="dropdown-item-custom "><a class="dropdown-item border-bottom border-secondary w-75 text-center " href={{ href }}{{ genre }}>{{genre}}</a>
+                    </li>
+                    {% endfor %}
+                    <br>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    {% for genre in genres|slice(4, 4) %}
+                    <li class="dropdown-item-custom "><a class="dropdown-item border-bottom border-secondary w-75 text-center " href={{ href }}{{ genre }}>{{genre}}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <ul class="col-6 list-unstyled">
+                    {% for genre in genres|slice(8, 4) %}
+                    <li class="dropdown-item-custom "><a class="dropdown-item border-bottom border-secondary w-75 text-center " href={{ href }}{{ genre }}>{{genre}}</a>
+                    </li>
+                    {% endfor %}
+                    <br>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    {% for genre in genres|slice(12, 5) %}
+                    <li class="dropdown-item-custom "><a class="dropdown-item border-bottom border-secondary w-75 text-center " href={{ href }}{{ genre }}>{{genre}}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="list-group list-group-horizontal ">
+        <!-- {% if controller == 'home' %} {% set href = "." %} {% else %} {% set href = "." %}{% endif %} -->
+        <a href="." class="list-group-item list-group-item-action actived">Trang chủ</a>
+        <a href="app?filter=top ranking" class="list-group-item list-group-item-action">Bảng xếp
+            hạng</a>
+        <a href="app?filter=new" class="list-group-item list-group-item-action">Mới phát hành</a>
+    </div>
+</div>

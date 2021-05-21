@@ -1,0 +1,93 @@
+body {
+    box-sizing: border-box;
+}
+
+.search-bar {
+    width: 50%;
+    margin-left: 50px;
+}
+
+.list-group {
+    margin-left: 3%;
+}
+
+.list-group a {
+    margin-left: 3%;
+    width: 200px;
+    padding: 10px;
+    border: 0;
+    text-align: center;
+}
+
+.list-group .actived {
+    border-bottom: 2px solid green;
+}
+
+.content .col-10 .menu {
+    padding: 0;
+}
+
+.items {
+    padding: 5px;
+}
+
+.items .card {
+    width: 160px;
+    margin-left: 15px;
+}
+
+.more-items {
+    margin-top: 15px;
+    height: 35px;
+}
+
+.user {
+    padding-top: 10px;
+    margin-right: 35px;
+}
+
+.logout {
+    padding-top: 15px;
+}
+
+.dropdown-item-custom {
+    padding-left: 30px;
+}
+
+.content {
+    padding-left: 5%;
+}
+
+.app-detail {
+    background-color: #f1f1f1;
+    width: 55%;
+    margin-right: 50px;
+    padding: 25px;
+}
+
+.detail .row {
+    margin: auto;
+}
+
+.detail a,
+span {
+    margin-right: 10px;
+}
+
+.same-apps {
+    width: 25%;
+}
+
+.content .btn {
+    width: 100px;
+}
+
+.no-gutters {
+    padding: 15px;
+}
+
+.carousel-item img {
+    max-width: max-content;
+    max-height: 360px;
+    margin-left: 67px;
+}
